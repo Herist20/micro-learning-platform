@@ -1,0 +1,56 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Nuxt
+.nuxt
+.output
+dist
+.nitro
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Testing
+coverage
+*.lcov
+.nyc_output
+
+# Build outputs
+build
+out
+
+# Prisma
+prisma/generated
+
+# Cache
+.cache
+.turbo
+.eslintcache
+
+# OS
+Thumbs.db

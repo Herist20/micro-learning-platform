@@ -1,0 +1,40 @@
+{
+  "name": "micro-learning-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Micro-Learning Platform with Nuxt 3, Hono, and PostgreSQL",
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel -r dev",
+    "dev:web": "pnpm --filter @micro-learning/web dev",
+    "dev:api": "pnpm --filter @micro-learning/api dev",
+    "build": "pnpm -r build",
+    "build:web": "pnpm --filter @micro-learning/web build",
+    "build:api": "pnpm --filter @micro-learning/api build",
+    "preview:web": "pnpm --filter @micro-learning/web preview",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix",
+    "format": "prettier --write \"**/*.{ts,tsx,vue,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,vue,json,md}\"",
+    "type-check": "pnpm -r type-check",
+    "clean": "pnpm -r clean && rm -rf node_modules",
+    "db:generate": "pnpm --filter @micro-learning/api db:generate",
+    "db:migrate": "pnpm --filter @micro-learning/api db:migrate",
+    "db:studio": "pnpm --filter @micro-learning/api db:studio",
+    "db:seed": "pnpm --filter @micro-learning/api db:seed"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.21.1",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  }
+}
